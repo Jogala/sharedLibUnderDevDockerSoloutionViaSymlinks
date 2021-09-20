@@ -8,7 +8,8 @@ Created on Mon Sep 20 13:29:34 2021
 
 pathsModuls = ['../myapp/'] 
 
-import os
+import shutil
 
 for pathModul in pathsModuls:
-    os.copy(pathModul + 'package_tmp.json',pathModul + 'package.json')
+    print(pathModul + 'package_tmp.json',' -> ',pathModul + 'package.json')
+    shutil.move(pathModul + 'package_tmp.json',pathModul + 'package.json')

@@ -8,7 +8,6 @@ Created on Sun Sep 19 16:46:18 2021
 
 #!/bin/bash
 
-import sys
 import os
 import shutil
 import subprocess

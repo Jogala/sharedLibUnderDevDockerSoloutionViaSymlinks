@@ -9,11 +9,13 @@ pathsModuls = ['../myapp/']
 
 import json
 import copy
-import os
+import shutil
 
 for pathModul in pathsModuls:
-
-    os.copy(pathModul + 'package.json',pathModul + 'package_tmp.json')
+    
+    print('removing local dependencies from ',pathModul)
+    
+    shutil.copy(pathModul + 'package.json',pathModul + 'package_tmp.json')
      
     with open(pathModul + 'package.json','r') as f:
         packages = json.load(f) 

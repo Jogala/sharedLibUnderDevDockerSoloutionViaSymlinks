@@ -9,6 +9,8 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "express": "^4.16.1"
+        "express": "^4.16.1",
+        "jomodul": "file:../jomodul",
+        "jomodul2": "file:../jomodul2"
     }
 }
