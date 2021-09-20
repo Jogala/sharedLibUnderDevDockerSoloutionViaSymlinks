@@ -1,7 +1,6 @@
-FROM node:latest
+FROM node:14
 WORKDIR /usr/src/app
-COPY . .
+COPY . . 
+RUN npm install --no-package-lock
 EXPOSE 8080
-EXPOSE 9229
-RUN npm install -g nodemon
-CMD [ "nodemon", "server.js" ]
+CMD [ "node", "server.js" ]

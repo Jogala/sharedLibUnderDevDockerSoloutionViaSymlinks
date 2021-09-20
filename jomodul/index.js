@@ -1,7 +1,7 @@
 
 function sayHello() {
 	console.log('HELLO FROM JOMODUL')
-	return "joachim"
+	return "jomodul: joachim katze"
 }
 
 module.exports = {sayHello}
